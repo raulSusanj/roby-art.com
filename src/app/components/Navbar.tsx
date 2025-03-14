@@ -31,15 +31,17 @@ export default function Navbar({
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         {showLogo && (
-          <div className="flex items-center">
-            <Image
-              src="/images/logo.svg"
-              alt="Roby Art Logo"
-              width={200} // Adjust size as needed
-              height={100}
-              className="mr-2"
-            />
-          </div>
+          <Link href="/">
+            <div className="flex items-center">
+              <Image
+                src="/images/logo.svg"
+                alt="Roby Art Logo"
+                width={200} // Adjust size as needed
+                height={100}
+                className="mr-2"
+              />
+            </div>
+          </Link>
         )}
 
         {/* Hamburger Menu Button (Mobile) */}
