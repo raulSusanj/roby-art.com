@@ -12,9 +12,10 @@ export default function Footer() {
             <Image src="images/logo_white.svg" width={250} height={150} alt="Roby Art Logo" />
             <p className="mt-2 text-sm font-semibold">Unikatne slike i keramika</p>
             <p className="mt-1 text-sm">Roby Art</p>
-            <p className="mt-1 text-sm">Creska 12, Rijeka 10000, HRVATSKA</p>
+            <p className="mt-1 text-sm">Creska 12, Rijeka 51000, HRVATSKA</p>
             <p className="mt-1 text-sm">robyart@vip.hr</p>
             <p className="mt-1 text-sm">+385(0)91 516 8526</p>
+            <p className="mt-1 text-sm">+385(0)92 194 8389</p>
           </div>
 
           {/* Navigation Links */}
@@ -43,7 +44,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-3">Zaprati nas</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="https://www.facebook.com/profile.php?id=100067784677564"
+                className="text-gray-400 hover:text-white"
+                target="_blank"
+              >
                 <i className="fab fa-facebook text-2xl">
                   <FaFacebook />
                 </i>
