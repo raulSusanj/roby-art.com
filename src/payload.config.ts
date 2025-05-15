@@ -23,6 +23,9 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Products, Categories],
+  upload: {
+    abortOnLimit: false,
+  },
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
