@@ -25,6 +25,9 @@ export default buildConfig({
   collections: [Users, Media, Products, Categories],
   upload: {
     abortOnLimit: false,
+    limits: {
+      fileSize: 20000000, // 20MB, written in bytes
+    },
   },
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
