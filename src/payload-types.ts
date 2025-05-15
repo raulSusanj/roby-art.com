@@ -160,6 +160,7 @@ export interface Media {
 export interface Product {
   id: number;
   name: string;
+  order?: number | null;
   categories?: (number | Category)[] | null;
   image: number | Media;
   description?: string | null;
@@ -174,6 +175,7 @@ export interface Product {
 export interface Category {
   id: number;
   name: string;
+  order?: number | null;
   image?: (number | null) | Media;
   /**
    * Select products that belong to this category
@@ -286,6 +288,7 @@ export interface MediaSelect<T extends boolean = true> {
  */
 export interface ProductsSelect<T extends boolean = true> {
   name?: T;
+  order?: T;
   categories?: T;
   image?: T;
   description?: T;
@@ -299,6 +302,7 @@ export interface ProductsSelect<T extends boolean = true> {
  */
 export interface CategoriesSelect<T extends boolean = true> {
   name?: T;
+  order?: T;
   image?: T;
   products?: T;
   updatedAt?: T;

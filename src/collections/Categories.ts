@@ -12,7 +12,13 @@ export const Categories: CollectionConfig = {
     {
       name: 'name',
       type: 'text',
+      label: 'Naziv kategorije',
       required: true,
+    },
+    {
+      name: 'order',
+      type: 'number',
+      label: 'Redni broj',
     },
     {
       name: 'image',
@@ -23,6 +29,7 @@ export const Categories: CollectionConfig = {
     {
       name: 'products',
       type: 'relationship',
+      label: 'Povezani proizvodi',
       relationTo: 'products', // Must match EXACTLY your products collection slug
       hasMany: true,
       admin: {

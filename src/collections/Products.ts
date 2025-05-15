@@ -10,6 +10,11 @@ export const Products: CollectionConfig = {
       required: true,
     },
     {
+      name: 'order',
+      type: 'number',
+      label: 'Redni broj',
+    },
+    {
       name: 'categories',
       type: 'relationship',
       label: 'Kategorija',
