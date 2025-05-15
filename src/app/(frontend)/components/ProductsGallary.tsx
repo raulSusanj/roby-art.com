@@ -83,7 +83,7 @@ export default function ProductsGallary({ categories }: { categories: Category[]
                     : '/images/placeholder.jpg'
                 }
                 alt={
-                  typeof product.image === 'object' && 'alt' in product.image
+                  product.image && typeof product.image === 'object' && 'alt' in product.image
                     ? product.image.alt
                     : 'Product image'
                 }
