@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="236.76332mm"
+   height="47.475315mm"
+   viewBox="0 0 236.76332 47.475315"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(13.078335,-72.010988)">
+    <g
+       id="g22">
+      <g
+         id="g20"
+         transform="matrix(1.5441533,0,0,1.5441533,-46.361006,-122.45801)"
+         style="fill:#f9f9f9">
+        <path
+           style="fill:#f9f9f9;fill-opacity:0.5053;stroke:none;stroke-width:0.241002px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 21.553994,133.20779 c 17.88177,7.15661 35.333,14.95635 56.17289,17.69415 21.691141,1.95485 22.724756,-3.36066 41.188766,-6.28241 18.3745,-1.43664 42.73471,8.2563 55.96724,12.0646 -13.60132,-8.11232 -29.10529,-21.052 -43.64433,-25.34304 -23.91999,-7.6548 -50.843306,-2.46999 -71.562516,0.46752 -20.08536,2.45659 -27.92412,0.0937 -38.12205,1.39918 z"
+           id="path19" />
+        <path
+           style="fill:#f9f9f9;fill-opacity:0.5053;stroke:none;stroke-width:0.252965px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 174.80104,140.98707 c -21.54386,6.16223 -42.54868,12.916 -67.79596,15.01408 -26.300836,1.37192 -27.688786,-3.47021 -50.190856,-6.46326 -22.35636,-1.64388 -32.85458,-8.65222 -15.3,-12.27634 28.86643,-6.50242 61.700876,-1.29932 86.942866,1.74981 24.46004,2.60103 33.92341,0.60225 46.34395,1.97571 z"
+           id="path20" />
+        <ellipse
+           style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1.165"
+           id="ellipse20"
+           cx="48.788815"
+           cy="138.07614"
+           rx="0.95290655"
+           ry="0.85761589" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:32.8262px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.820653"
+         x="105.78302"
+         y="112.41965"
+         id="text20"><tspan
+           id="tspan20"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Tamil MN';-inkscape-font-specification:'Tamil MN';fill:#ffffff;stroke-width:0.820653"
+           x="105.78302"
+           y="112.41965">ROBY ART</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:17.6389px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke-width:0.820653"
+         x="105.783"
+         y="83.689873"
+         id="text21"><tspan
+           id="tspan21"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.6389px;font-family:'Tamil MN';-inkscape-font-specification:'Tamil MN';fill:#f9f9f9;stroke-width:0.820653"
+           x="105.783"
+           y="83.689873">ATELIER</tspan></text>
+    </g>
+  </g>
+</svg>

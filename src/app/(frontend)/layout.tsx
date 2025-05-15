@@ -1,18 +1,31 @@
-import React from 'react'
-import './styles.css'
+import type { Metadata } from 'next'
+import { Poppins } from 'next/font/google'
+import '../global.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
-export const metadata = {
-  description: 'A blank template using Payload in a Next.js app.',
-  title: 'Payload Blank Template',
+const poppins = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+export const metadata: Metadata = {
+  title: 'Roby Art',
+  description: 'Unikatna i ručno izrađena ukrasna i uporabna keramika',
 }
 
-export default async function RootLayout(props: { children: React.ReactNode }) {
-  const { children } = props
-
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
     <html lang="en">
-      <body>
-        <main>{children}</main>
+      <body className={poppins.className}>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   )
