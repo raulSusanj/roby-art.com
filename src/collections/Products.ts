@@ -26,7 +26,6 @@ export const Products: CollectionConfig = {
       type: 'upload',
       label: 'Slika proizvoda',
       relationTo: 'media', // This must match your media collection slug
-      required: true,
     },
     {
       name: 'description',

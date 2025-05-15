@@ -162,7 +162,7 @@ export interface Product {
   name: string;
   order?: number | null;
   categories?: (number | Category)[] | null;
-  image: number | Media;
+  image?: (number | null) | Media;
   description?: string | null;
   additionalPreviewText?: string | null;
   updatedAt: string;
