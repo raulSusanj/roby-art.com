@@ -23,6 +23,11 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Products, Categories],
+  upload: {
+    limits: {
+      fileSize: 20000000, // 20MB, written in bytes
+    },
+  },
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
