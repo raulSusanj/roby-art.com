@@ -11,8 +11,13 @@ const poppins = Poppins({
   display: 'swap',
 })
 export const metadata: Metadata = {
-  title: 'Roby Art',
+  title: 'Roby Art - Unikatna keramika',
   description: 'Unikatna i ručno izrađena ukrasna i uporabna keramika',
+  icons: {
+    icon: '/images/favicon.png',
+    shortcut: '/images/favicon.png',
+    apple: '/images/favicon.png',
+  },
 }
 
 export default function RootLayout({

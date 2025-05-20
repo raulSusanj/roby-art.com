@@ -21,6 +21,16 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    meta: {
+      title: 'Roby Art - Kontrolna ploča',
+      icons: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          url: '/images/favicon.png',
+        },
+      ],
+    },
   },
   collections: [Users, Media, Products, Categories],
   upload: {
