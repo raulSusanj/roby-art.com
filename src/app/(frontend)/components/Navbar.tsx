@@ -99,7 +99,7 @@ export default function Navbar({
             href={`tel:+385(0)91 516 8526`}
             className="block border-1 border-amber-600 text-gray-700 hover:text-white px-4 py-2 rounded-full hover:bg-amber-600 transition-colors mt-2"
           >
-            385(0)91 516 8526
+            +385(0)91 516 8526
           </a>
         </div>
       )}

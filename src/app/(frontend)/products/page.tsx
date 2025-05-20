@@ -8,7 +8,6 @@ export default async function Products() {
   const { docs: categories } = await payload.find({
     collection: 'categories',
   })
-  console.log(categories)
   return (
     <Suspense fallback={<div>Učitavanje...</div>}>
       <ProductsGallary categories={categories} />

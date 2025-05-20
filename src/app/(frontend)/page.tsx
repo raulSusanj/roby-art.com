@@ -11,7 +11,6 @@ export default async function Home() {
     collection: 'categories',
   })
 
-  console.log(categories)
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -65,7 +64,6 @@ export default async function Home() {
             {/* Product Images */}
             <div className="grid grid-cols-1 gap-4 md:flex md:space-x-6 md:overflow-x-auto pb-4">
               {categories.map((category: Category) => {
-                console.log(category)
                 return (
                   <Link key={category.id} href={`/products?category=${category.id}`}>
                     <div className="w-full md:w-64 flex-shrink-0 flex flex-col items-center">
