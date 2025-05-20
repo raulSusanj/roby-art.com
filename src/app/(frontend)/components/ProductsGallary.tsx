@@ -79,7 +79,7 @@ export default function ProductsGallary({ categories }: { categories: Category[]
               <Image
                 src={
                   typeof product.image === 'object' && product.image?.url
-                    ? product.image.url
+                    ? `${process.env.NEXT_PUBLIC_WEBSITE_URL}${product.image.url}`
                     : '/images/placeholder.jpg'
                 }
                 alt={

@@ -65,6 +65,7 @@ export default async function Home() {
             {/* Product Images */}
             <div className="grid grid-cols-1 gap-4 md:flex md:space-x-6 md:overflow-x-auto pb-4">
               {categories.map((category: Category) => {
+                console.log(category)
                 return (
                   <Link key={category.id} href={`/products?category=${category.id}`}>
                     <div className="w-full md:w-64 flex-shrink-0 flex flex-col items-center">
@@ -72,7 +73,7 @@ export default async function Home() {
                         <Image
                           src={
                             typeof category.image === 'object' && category.image?.url
-                              ? category.image.url
+                              ? `${process.env.WEBSITE_URL}${category.image.url}`
                               : '/images/placeholder.jpg'
                           }
                           alt={
