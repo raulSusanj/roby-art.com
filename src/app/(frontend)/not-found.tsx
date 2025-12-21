@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from './styles/not-found.module.css' // You'll need to create this CSS module
+import styles from '../styles/not-found.module.css' // You'll need to create this CSS module
 
 export default function Custom404() {
   return (
