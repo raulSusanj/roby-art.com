@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo & Description */}
           <div>
-            <Image src="images/logo_white.svg" width={250} height={150} alt="Roby Art Logo" />
+            <Image src="/images/logo_white.svg" width={250} height={150} alt="Roby Art Logo" />
             <p className="mt-2 text-sm font-semibold">Unikatne slike i keramika</p>
             <p className="mt-1 text-sm">Roby Art</p>
             <p className="mt-1 text-sm">Creska 12, Rijeka 51000, HRVATSKA</p>
