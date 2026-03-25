@@ -27,7 +27,8 @@
       "Bash(grep -rh \"src=[''''][^'''']*\\\\\\(jpg\\\\|png\\\\|svg\\\\|jpeg\\\\|gif\\\\|webp\\\\|ico\\\\\\)\" /Users/raulsusanj/Development/roby-art/src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
       "Bash(grep -rh \"/images/\\\\|images/\" /Users/raulsusanj/Development/roby-art/src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
       "Read(//images/**)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(git restore:*)"
     ]
   }
 }
