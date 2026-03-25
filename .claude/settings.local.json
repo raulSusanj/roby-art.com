@@ -28,7 +28,8 @@
       "Bash(grep -rh \"/images/\\\\|images/\" /Users/raulsusanj/Development/roby-art/src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
       "Read(//images/**)",
       "Read(//tmp/**)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(ls /Users/raulsusanj/Development/roby-art/src/app/\\\\\\(app\\\\\\)/)"
     ]
   }
 }
