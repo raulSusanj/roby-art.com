@@ -21,11 +21,7 @@
       "Bash(curl -s \"https://www.roby-art.com/api/products?depth=1&limit=2&sort=order\")",
       "Bash(vercel link:*)",
       "Bash(vercel env:*)",
-      "Bash(1 echo:*)",
-      "Bash(curl -s \"https://api.github.com/users/raulSusanj/repos?per_page=50\")",
-      "Bash(python3 -c \"import sys,json; [print\\(r[''''full_name'''']\\) for r in json.load\\(sys.stdin\\)]\")",
-      "Bash(curl -s https://api.github.com/repos/raulSusanj/roby-art)",
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\(''''full_name'''', d.get\\(''''message'''',''''''''\\)\\)\\)\")"
+      "Bash(1 echo:*)"
     ]
   }
 }
