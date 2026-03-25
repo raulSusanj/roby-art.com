@@ -1,56 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { CategoryDoc } from "./products/page";
 
-const CMS_URL = process.env.CMS_URL ?? "http://localhost:3000";
-
-function resolveUrl(url?: string): string | undefined {
-  if (!url) return undefined;
-  if (url.startsWith("http")) return url;
-  return `${CMS_URL}${url}`;
-}
-
-async function fetchCategories(): Promise<CategoryDoc[]> {
-  try {
-    const res = await fetch(`${CMS_URL}/api/categories?depth=1&limit=20&sort=order`, {
-      next: { revalidate: 3600 },
-    });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return (data.docs ?? []).map((cat: CategoryDoc) => ({
-      ...cat,
-      image: cat.image ? { ...cat.image, url: resolveUrl(cat.image.url)! } : undefined,
-    }));
-  } catch {
-    return [];
-  }
-}
-
-export default async function Home() {
-  const categories = await fetchCategories();
-
+export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="h-screen relative flex items-center justify-center">
-        <Image
-          src="/images/voce_i_povrce/voce_i_povrce_2.JPG"
-          alt="Hero background"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={75}
-          sizes="100vw"
-        />
-        <div className="relative z-10 text-center text-gray-500 animate-fade-in">
-          <Image
-            src="/images/logo.svg"
-            alt="Roby Art"
-            width={800}
-            height={800}
-            className="animate-float"
-            priority
-          />
+      <div
+        className="h-screen bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: "url('/images/voce_i_povrce/voce_i_povrce_2.JPG')" }}
+      >
+        <div className="text-center text-gray-500 animate-fade-in">
+          <Image src="/images/logo.svg" alt="Roby Art" width={800} height={800} className="animate-float" />
           <p className="text-xl text-white animate-slide-up">unikatna i ručno izrađena ukrasna i uporabna keramika</p>
         </div>
       </div>
@@ -72,6 +32,7 @@ export default async function Home() {
         {/* Products Section */}
         <div id="products" className="bg-white py-16 px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
+            {/* Title and Button Container */}
             <div className="flex space-x-8 items-center mb-8">
               <h2 className="text-4xl">Naši proizvodi</h2>
               <Link
@@ -82,29 +43,50 @@ export default async function Home() {
               </Link>
             </div>
 
-            {/* Category circles — from CMS if available, fallback to local images */}
+            {/* Product Images */}
             <div className="grid grid-cols-1 gap-4 md:flex md:space-x-6 md:overflow-x-auto pb-4">
-              {categories.length > 0
-                ? categories.map((cat) => (
-                    <Link key={cat.id} href={`/products?category=${cat.id}`}>
-                      <div className="w-full md:w-64 flex-shrink-0 flex flex-col items-center">
-                        <div className="relative w-64 h-64 rounded-full overflow-hidden">
-                          {cat.image?.url && (
-                            <Image
-                              src={cat.image.url}
-                              alt={cat.image.alt ?? cat.name}
-                              fill
-                              className="object-cover"
-                              sizes="256px"
-                            />
-                          )}
-                        </div>
-                        <p className="text-center mt-2">{cat.name}</p>
-                      </div>
-                    </Link>
-                  ))
-                : /* fallback while CMS is empty */
-                  null}
+              <Link href="/products?category=uporabna">
+                <div className="w-full md:w-64 flex-shrink-0 flex flex-col items-center">
+                  <div className="relative w-64 h-64 rounded-full overflow-hidden">
+                    <Image
+                      src={`/images/uporabna/uporabna_1.jpg`}
+                      alt="Uporabna keramika"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-center mt-2">Uporabna keramika</p>
+                </div>
+              </Link>
+              <Link href="/products?category=slike">
+                <div className="w-full md:w-64 flex-shrink-0 flex flex-col items-center">
+                  <div className="relative w-64 h-64 rounded-full overflow-hidden">
+                    <Image src={`/images/slike/slike_1.JPG`} alt="Slike od keramike" fill className="object-cover" />
+                  </div>
+                  <p className="text-center mt-2">Slike od keramike</p>
+                </div>
+              </Link>
+              <Link href="/products?category=voce">
+                <div className="w-full md:w-64 flex-shrink-0 flex flex-col items-center">
+                  <div className="relative w-64 h-64 rounded-full overflow-hidden">
+                    <Image
+                      src={`/images/voce_i_povrce/voce_i_povrce_1.JPG`}
+                      alt="Voće i povrće od keramike"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-center mt-2">Voće i povrće od keramike</p>
+                </div>
+              </Link>
+              <Link href="/products?category=ukrasna">
+                <div className="w-full md:w-64 flex-shrink-0 flex flex-col items-center">
+                  <div className="relative w-64 h-64 rounded-full overflow-hidden">
+                    <Image src={`/images/ukrasna/ukrasna_1.JPG`} alt="Ukrasna keramika" fill className="object-cover" />
+                  </div>
+                  <p className="text-center mt-2">Ukrasna keramika</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -118,8 +100,6 @@ export default async function Home() {
             height={800}
             className="animate-slide-in-from-right"
             style={{ width: "80%", height: "auto" }}
-            priority
-            sizes="(min-width: 768px) 33vw, 0px"
           />
         </div>
       </div>
