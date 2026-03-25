@@ -38,6 +38,15 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+<<<<<<< HEAD
 .env
 
 /media
+=======
+# product images — served from Vercel Blob in production
+public/images/uporabna/
+public/images/voce_i_povrce/
+public/images/ukrasna/
+public/images/slike/
+.env*.local
+>>>>>>> 61eb54a (changes)

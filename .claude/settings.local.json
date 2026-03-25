@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r vercel /Users/raulsusanj/Development/roby-art --include=*.json --include=*.ts --include=*.tsx --include=*.js)",
+      "Bash(du -sh /Users/raulsusanj/Development/roby-art/public/images/*)",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(grep -oP \"\\(?<=/images/\\)[^\"\"''''\\\\`\\\\s]+\")",
+      "Bash(git -C /Users/raulsusanj/Development/roby-art ls-files public/)",
+      "Bash(git:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(npx next:*)",
+      "Bash(ls:*)",
+      "mcp__claude_ai_Vercel__list_teams",
+      "mcp__claude_ai_Vercel__list_projects",
+      "mcp__claude_ai_Vercel__get_project",
+      "Bash(curl -s \"https://roby-art.com/api/categories?limit=5&sort=order\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -sv \"https://roby-art.com/api/categories?limit=5&sort=order\")",
+      "Bash(curl -s \"https://www.roby-art.com/api/categories?limit=5&sort=order\")",
+      "Bash(curl -s \"https://www.roby-art.com/api/products?depth=1&limit=2&sort=order\")",
+      "Bash(vercel link:*)",
+      "Bash(vercel env:*)",
+      "Bash(1 echo:*)"
+    ]
+  }
+}
