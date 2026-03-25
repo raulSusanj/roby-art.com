@@ -21,7 +21,13 @@
       "Bash(curl -s \"https://www.roby-art.com/api/products?depth=1&limit=2&sort=order\")",
       "Bash(vercel link:*)",
       "Bash(vercel env:*)",
-      "Bash(1 echo:*)"
+      "Bash(1 echo:*)",
+      "Bash(grep -r \"\\\\.png\\\\|\\\\.jpg\\\\|\\\\.jpeg\\\\|\\\\.gif\\\\|\\\\.svg\\\\|\\\\.webp\\\\|\\\\.ico\" /Users/raulsusanj/Development/roby-art/src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx --include=*.json)",
+      "Bash(grep -r \"images\\\\|\\\\.jpg\\\\|\\\\.png\\\\|\\\\.svg\\\\|\\\\.ico\\\\|\\\\.webp\" /Users/raulsusanj/Development/roby-art/src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
+      "Bash(grep -rh \"src=[''''][^'''']*\\\\\\(jpg\\\\|png\\\\|svg\\\\|jpeg\\\\|gif\\\\|webp\\\\|ico\\\\\\)\" /Users/raulsusanj/Development/roby-art/src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
+      "Bash(grep -rh \"/images/\\\\|images/\" /Users/raulsusanj/Development/roby-art/src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
+      "Read(//images/**)",
+      "Read(//tmp/**)"
     ]
   }
 }
